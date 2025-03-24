@@ -1,18 +1,18 @@
 {
-    "name": "ryangjchandler/skeleton-php",
-    "description": "A template repository for PHP packages.",
+    "name": "ryangjchandler/canvas2d",
+    "description": "Create 2D images or graphics using a declarative API in PHP.",
     "license": "MIT",
-    "readme": "https://github.com/ryangjchandler/skeleton-php/README.md",
+    "readme": "https://github.com/ryangjchandler/canvas2d/README.md",
     "authors": [
         {
             "name": "Ryan Chandler",
             "email": "support@ryangjchandler.co.uk"
         }
     ],
-    "homepage": "https://github.com/ryangjchandler/skeleton-php",
+    "homepage": "https://github.com/ryangjchandler/canvas2d",
     "autoload": {
         "psr-4": {
-            "RyanChandler\\Skeleton\\": "src"
+            "RyanChandler\\Canvas2d\\": "src"
         }
     },
     "autoload-dev": {
@@ -22,6 +22,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "require": {
+        "php": "^8.3"
+    },
     "require-dev": {
         "pestphp/pest": "^3.7",
         "phpstan/phpstan": "^2.0",
