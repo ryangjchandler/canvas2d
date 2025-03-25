@@ -3,7 +3,7 @@
 namespace Imagewind\Html\Nodes;
 
 /** @internal */
-class P implements Node
+class P implements Node, HasChildren, HasClasses
 {
     /**
      * @param Node[] $children
@@ -12,4 +12,14 @@ class P implements Node
         public array $children = [],
         public ClassList $classes = new ClassList(),
     ) {}
+
+    public function children(): array
+    {
+        return $this->children;
+    }
+
+    public function classes(): ClassList
+    {
+        return $this->classes;
+    }
 }
